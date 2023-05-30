@@ -1,0 +1,224 @@
+*{
+    box-sizing:border-box;
+    font-family: 'Fraunces', serif;
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(222, 228, 250);
+    color: rgba(10, 56, 113, 1);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow:hidden;
+}
+
+header img{
+    margin-top: 30px;
+    width: 8%;
+}
+
+.all{
+    display: flex;
+    justify-content:space-around;
+}
+
+#texto{
+    width: 700px;
+    height: 380px;
+    padding: 10px;
+    margin-left: 40px;
+    vertical-align: top;
+    color: #0A3871;
+    border: none;
+    font-weight: 400;
+    font-size: 32px;
+    resize: none;
+}
+
+#texto:focus {
+    outline: none;
+}
+
+#texto::placeholder {
+    text-align: left;
+    color: #456081;
+}
+
+.advertencia{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 50px;
+}
+.advertencia img{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.all-boton{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 40px;
+}
+
+.boton{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#boton-encriptar{
+    height: 68px;
+    border: none;
+    background-color: #0A3871;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#boton-desencriptar{
+    color: #0A3871;
+    text-align: center;
+    margin-left: 60px;
+}
+
+#boton-desencriptar:hover{
+    background-color: #0A3871;
+    color: #FFFFFF;
+}
+
+.salida{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color:#FFFFFF;
+    padding: 10px 50px;
+    width: 400px;
+    height: 500px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+#resultado {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #0A3871;
+    border: none;
+    font-weight: 400;
+    font-size: 24px;
+    resize: none;
+    background-color: #FFFFFF;
+    outline: none;
+    scrollbar-width: none;
+}
+  
+#resultado::-webkit-scrollbar {
+    display: none; 
+}
+
+.p1{
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 0;
+    display: block;
+    background: none;
+}
+
+.p2{
+    font-size: 18px;
+    display: block;
+    background: none;
+}
+
+
+.salida img{
+    width: 80%;
+    display: block;
+    background: none;
+}
+
+.boton-container{
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.boton-copy{
+    cursor: pointer;
+    width: 100%;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    background-color: #FFFFFF;
+    font-size: 18px;
+    display: none;
+    margin: 0;
+}
+
+.boton-copy:hover{
+    background-color: #0A3871;
+    color: #FFFFFF;
+}
+
+
+/*samsung s8+*/
+@media screen and (max-width: 1440px) {
+    header img {
+      width: 10%;
+    }
+  
+    .all {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #texto {
+      width: 100%;
+      height: 500px;
+      font-size: 50px;
+    }
+  
+    .advertencia {
+      margin-left: 0;
+      margin-top: 100px;
+      text-align: center;
+    }
+  
+    .all-boton {
+      margin-left: 0;
+    }
+  
+    #boton-encriptar,
+    #boton-desencriptar {
+      width: 100%;
+      margin: 10px;
+    }
+  
+    .salida {
+      width: 90%;
+      height: 800px;
+      margin-top: 80px;
+    }
+  
+    #resultado {
+      font-size: 40px;
+    }
+  
+    .salida img {
+      width: 80%;
+    }
+  
+    .boton-container {
+      width: 90%;
+    }
+  }
